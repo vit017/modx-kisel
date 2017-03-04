@@ -134,23 +134,24 @@ p {
 #h-nav {
     background: #8cba62;
 }
-
-#h-nav li {
-    float: left;
+#h-nav ul {
+    display: block;
+    text-align: center;
 }
-
-#h-nav li:first-child a {
-    padding-left: 1.5em;
+#h-nav li {
+    display: inline-block;
+}
+#h-nav li:first-child {
+    float: left;
 }
 #h-nav li:last-child {
     float: right;
 }
-
 #h-nav a {
     color: #fff;
     display: block;
     font-size: 1em;
-    padding: .438em 1.1em;
+    padding: .438em 1em;
     text-decoration: underline;
 }
 
@@ -741,7 +742,7 @@ a#touch-menu {
     }
     #h-nav a {
         font-size: .9em;
-        padding: .438em 1.35em;
+        padding: .438em 1.2em;
     }
 }
 
@@ -750,8 +751,8 @@ a#touch-menu {
         font-size: 1.138em;
     }
     #h-nav a {
-        font-size: 0.8em;
-        padding: .438em 0.75em;
+        font-size: .8em;
+        padding: .438em .5em;
     }
     #carousel-main .item .we-do {
         font-size: 2.26em;
@@ -764,7 +765,7 @@ a#touch-menu {
         font-size: 1.175em;
     }
     #carousel-main .item a.to-catalog {
-        font-size: 0.925em;
+        font-size: .925em;
     }
     .name-review, .short-review {
         font-size: 1em;
@@ -820,14 +821,16 @@ a#touch-menu {
         background: #517539;
         margin-bottom: 2px;
         padding-bottom: 1em;
+        text-align: left;
     }
     #h-nav ul, #catalog-menu ul {
         display: none;
     }
-    #h-nav ul li {
+    #h-nav li:first-child, #h-nav li:last-child {
         float: none;
     }
-    #h-nav ul li:last-child {
+    #h-nav ul li {
+        display: block;
         float: none;
     }
     #h-nav ul li a {
