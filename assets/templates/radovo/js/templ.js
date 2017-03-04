@@ -3,7 +3,7 @@ $(function () {
     /**
      * check fix buttons (arrow-up, callback) on window scroll event
      */
-    var $parent = $('.btns-fix-1'),
+    var $parent = $('.btns-fix'),
         $btnArrow = $parent.find('.arrow-up'),
         btnOpacity = getComputedStyle($btnArrow[0]).opacity,
         $btnCallback = $parent.find('.callback'),
