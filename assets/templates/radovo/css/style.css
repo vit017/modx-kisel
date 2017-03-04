@@ -139,6 +139,9 @@ p {
     float: left;
 }
 
+#h-nav li:first-child a {
+    padding-left: 1.5em;
+}
 #h-nav li:last-child {
     float: right;
 }
@@ -147,7 +150,7 @@ p {
     color: #fff;
     display: block;
     font-size: 1em;
-    padding: .438em 1.2em;
+    padding: .438em 1.1em;
     text-decoration: underline;
 }
 
